@@ -10,23 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
+void	ft_putnbr(int n)
+{
+	long	nbr;
 
-/* fonctions prototypés avec des int */
-int		ft_strlen(char *str);
-int		ft_strcmp(const char *s1, const char *s2);
-int		ft_atoi(const char *str);
-
-/* fonctions prototypés avec des char*/
-
-/* fonctions prototypés avec des void */
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-void	ft_putendl(const char *s);
-void	ft_putnbr(int n);
-void	ft_putchar_fd(char c, int fd);
-
-#endif
+	nbr = n;
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nbr = -nbr;
+	}
+	if (nbr >= 10)
+		ft_putnbr(nbr / 10);
+	ft_putchar(nbr % 10 + '0');
+}

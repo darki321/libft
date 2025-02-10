@@ -10,23 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
+void	ft_putendl_fd(char const *s, int fd)
+{
+	int	i;
 
-/* fonctions prototypés avec des int */
-int		ft_strlen(char *str);
-int		ft_strcmp(const char *s1, const char *s2);
-int		ft_atoi(const char *str);
-
-/* fonctions prototypés avec des char*/
-
-/* fonctions prototypés avec des void */
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-void	ft_putendl(const char *s);
-void	ft_putnbr(int n);
-void	ft_putchar_fd(char c, int fd);
-
-#endif
+	i = 0;
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
+		i++;
+	}
+	ft_putchar('\n');
+}
