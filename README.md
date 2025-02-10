@@ -1,2 +1,2 @@
 # libft
-will be update
+will be edit after finish libft
