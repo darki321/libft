@@ -6,13 +6,14 @@
 /*   By: molapoug <molapoug@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:13:35 by tchevrie          #+#    #+#             */
-/*   Updated: 2022/11/08 11:03:58 by tchevrie         ###   ########.fr       */
+/*   Updated: 2025/02/10 17:36:35 by molapoug         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+/* include des libs nécessaires à la libft */
 # include <unistd.h>
 
 /* fonctions prototypés avec des int */
@@ -28,6 +29,6 @@ void	ft_putstr(char *str);
 void	ft_putendl(const char *s);
 void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
-void	ft_putendl(char const *s, int fd);
+void	ft_putendl_fd(char const *s, int fd);
 
 #endif
