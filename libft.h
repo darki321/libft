@@ -28,5 +28,6 @@ void	ft_putstr(char *str);
 void	ft_putendl(const char *s);
 void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
+void	ft_putendl(char const *s, int fd);
 
 #endif
