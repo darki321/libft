@@ -6,7 +6,7 @@
 /*   By: molapoug <molapoug@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:13:35 by tchevrie          #+#    #+#             */
-/*   Updated: 2025/02/10 17:36:35 by molapoug         ###   ########.fr       */
+/*   Updated: 2025/02/11 11:05:26 by molapoug         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,11 @@
 int		ft_strlen(char *str);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_atoi(const char *str);
+int		isalpha(int c);
+int		isdigit(int c);
 
-/* fonctions prototypés avec des char*/
+/* fonctions prototypés avec des char */
+char	*ft_strcat(char *dest, char *src);
 
 /* fonctions prototypés avec des void */
 void	ft_putchar(char c);
