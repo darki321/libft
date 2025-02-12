@@ -1,18 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: molapoug <molapoug@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/11 10:41:09 by molapoug          #+#    #+#             */
-/*   Updated: 2025/02/12 12:25:09 by molapoug         ###   ########.fr       */
+/*   Created: 2025/02/12 12:02:07 by molapoug          #+#    #+#             */
+/*   Updated: 2025/02/12 12:17:01 by molapoug         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+char	*ft_strstr(char *str, char *to_find)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+	if (*to_find == '\0')
+		return (str);
+	while (str[i])
+	{
+		while (str[i + j] && to_find[j] && str[i + j] == to_find[j])
+		{
+			j++;
+		}
+		if (to_find[j] == '\0')
+			return (&str[i]);
+		i++;
+	}
 	return (0);
 }
