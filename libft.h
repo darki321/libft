@@ -6,7 +6,7 @@
 /*   By: molapoug <molapoug@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 15:13:35 by molapoug          #+#    #+#             */
-/*   Updated: 2025/02/12 18:50:32 by molapoug         ###   ########.fr       */
+/*   Updated: 2025/02/12 19:00:30 by molapoug         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_islower_alpha(int c);
+int		ft_isupper_alpha(int c);
 int		ft_tolower(int c);
 
 /* fonctions prototypés avec des char */
