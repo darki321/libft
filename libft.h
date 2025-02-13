@@ -6,7 +6,7 @@
 /*   By: molapoug <molapoug@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 15:13:35 by molapoug          #+#    #+#             */
-/*   Updated: 2025/02/13 10:36:48 by molapoug         ###   ########.fr       */
+/*   Updated: 2025/02/13 17:32:05 by molapoug         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int		ft_tolower(int c);
 char	*ft_strcat(char *dest, char *src);
 char	*ft_strstr(char *str, char *to_find);
 char	*ft_strdup(const char *s);
+char	*ft_strcpy(char *dest, char *src);
 
 /* fonctions prototypés avec des void */
 void	ft_putchar(char c);
