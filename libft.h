@@ -6,7 +6,7 @@
 /*   By: molapoug <molapoug@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 15:13:35 by molapoug          #+#    #+#             */
-/*   Updated: 2025/02/12 19:00:30 by molapoug         ###   ########.fr       */
+/*   Updated: 2025/02/13 10:36:48 by molapoug         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,14 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+/* lib a supprimer plus tard */
+# include <stdio.h>
+# include <string.h>
+
 /* fonctions prototypés avec des int */
 int		ft_strlen(char *str);
 int		ft_strcmp(const char *s1, const char *s2);
+int		ft_strncmp(char *s1, char *s2, int n);
 int		ft_atoi(const char *str);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
